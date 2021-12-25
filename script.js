@@ -34,11 +34,9 @@ inputBorder.addEventListener('change', function(){
 });
 buttonCircle.addEventListener('click', function(){
 	cvadrat.style.borderRadius = 100+'%';
-
 });
 buttonCvadrat.addEventListener('click', function(){
 	cvadrat.style.borderRadius = 0+'px';
-
 });
 inputRotate.addEventListener('change', function(){
 	cvadrat.style.transform = 'rotate('+inputRotate.value+'deg)';
