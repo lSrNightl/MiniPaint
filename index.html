@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.cvadrat{
+			height: 100px;
+			width: 100px;
+			background-color: gray;
+			transition: 0.1s;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			font-size: 15px;	
+			overflow: hidden;		
+		}
+		.inp{
+			display: flex;
+			height: 20px;
+			width: 300px; 
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="inp">
+		Цвет
+		<input id="input_color" type="color" name=""></div>
+	<div class="inp">
+		Высота
+		<input id="input_height" type="range" min="50" max="600" value="100" step="50" name=""></div>
+	<div class="inp">
+		Ширина
+		<input id="input_width" type="range" min="50" max="600" value="100" step="50" name=""></div>
+	<div class="inp">
+		Обводка
+		<input id="input_border" type="range" min="0" max="10" value="1" step="1" name="">
+		<input id="input_bordercolor" type="color" name=""></div>
+	<div class="inp">
+		Повернуть на
+		<input id="input_rotate" type="range" min="0" max="360" value="0" step="5" name=""></div>
+	<div class="inp">
+		Текст
+		<input id="input_text" type="text">
+		<button id="button_text">Добавить</button>
+		</div>
+	<div class="inp">
+		<input id="input_textcolor" type="color">
+		Размер
+		<input id="input_textsize" type="text">
+	</div>
+	<button id="button_circle">Эллипс</button>
+	<button id="button_cvadrat">Квадрат</button>
+	<div>
+		<div class="cvadrat"></div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
